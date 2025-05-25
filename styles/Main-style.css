@@ -102,3 +102,28 @@ a:hover {
 
 }
 
+.hover-translate {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.hover-translate:hover .tooltip {
+  opacity: 1;
+}
