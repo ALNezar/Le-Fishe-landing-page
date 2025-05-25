@@ -1,19 +1,34 @@
+
+
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+ display: flex; 
+  flex-flow: column wrap;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px;
   background-color: #1F2937;
   
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  flex: auto;
+    gap: 900px;                      
+
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 0 40px;               
+  background-color: #1F2937;
+
 }
 
 .nav-links {
-
+  
+  display: flex;
+  justify-content: space-around; 
+  gap: 30px;                      
+  list-style: none;
+   margin: 25.8px;
+  padding: 0px;
   list-style-type: none;
   font-family: "Lobster", sans-serif;
   font-weight: 400;
@@ -22,6 +37,10 @@ nav {
 }
 
 h1 {
+
+ margin: -36.4px;
+padding: 39.2px;
+
   font-family: "Dancing Script", cursive;
   font-weight: 400;
   font-size: 68px;
@@ -30,6 +49,8 @@ h1 {
 }
 
 h2 {
+  margin: 25.8px;
+  padding: 0px;
 
     font-size: 12px;
   font-family: "Lobster", sans-serif;
@@ -39,29 +60,45 @@ h2 {
 }
 
 .button-top {
+    margin: 25.8px;
+  padding: 0px;
+
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: large;
   width: 100px;
   height: 45px;
-    background-color: white;
+  background-color: white;
   color: black;
-  border: 2px solid #555555;
+  border: 2px dashed #607aad;
   border-radius: 8px;
+  transition: background-color 0.8s ease, color 0.8s ease, transform 0.8s ease;
 }
 
-.fish {
+.button-top:hover {
+  background-color: #607aad;
+  color: white;
+  transform: translateY(-1px); 
+}
+
+
+.lefishe-gif {
   display: flex;
+    margin: 25.8px;
+  padding: 0px;
+    border: 2px dashed #ffffff;
+
 }
 a {
   color: #F9FAF8;
   text-decoration: none;
+
 }
 
 a:hover {
   color: #607aad;
+    transition: 0.8s;
+
 }
-.button-top:hover{
-background-color: #607aad;
-  color: white;}
+
