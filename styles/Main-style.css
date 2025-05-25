@@ -30,12 +30,10 @@ h1 {
 }
 
 h2 {
-        font-size: 12px;
 
+    font-size: 12px;
   font-family: "Lobster", sans-serif;
-    font-weight: 400;
-
-
+  font-weight: 400;
   font-style: normal;
   color: #F9FAF8;
 }
