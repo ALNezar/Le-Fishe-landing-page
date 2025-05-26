@@ -90,19 +90,23 @@ h2 {
     border: 2px dashed #ffffff;
 
 }
+
+
+
+/* Links */
 a {
   color: #F9FAF8;
   text-decoration: none;
-
+  transition: color 0.8s;
 }
 
 a:hover {
   color: #607aad;
-    transition: 0.8s;
-
 }
 
-.hover-translate {
+/* Tooltip System */
+.hover-translate,
+.hover-translate-h2 {
   position: relative;
   display: inline-block;
   cursor: help;
@@ -124,33 +128,7 @@ a:hover {
   pointer-events: none;
 }
 
+.hover-translate:hover .tooltip,
 .hover-translate-h2:hover .tooltip {
-  opacity: 1;
-}
-
-
-.hover-translate-h2 {
-  position: relative;
-  display: inline-block;
-  cursor: help;
-}
-
-.tooltip {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: black;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 6px;
-  font-size: 20px;
-  opacity: 0;
-  transition: opacity 0.9s ease;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-.hover-translate:hover .tooltip {
   opacity: 1;
 }
