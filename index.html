@@ -20,15 +20,24 @@
 
 
 <body>
-
-  <header>
-    <audio loop autoplay>
-
+<audio id="fishe-audio" loop autoplay>
   <source src="/Audio/le fishe (full version).mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-    <nav>
-   <img src="images/le fishe logo.png" alt="Le Fishe logo" width="150" height="150">
+
+<script>
+  const audio = document.getElementById("fishe-audio");
+  audio.volume = 0.1; // 0 = silent, 1 = full volume
+</script>
+
+
+  <header>
+
+
+       <nav>
+        <div class="logo">
+  <img src="images/le fishe logo.png" alt="Le Fishe logo" width="150" height="150">
+</div>
       <ul class="nav-links">
         <li><a href="La'Océan">La'Océan</a></li>
         <li><a href="La'Sea">La'Sea"</a></li>
@@ -59,9 +68,9 @@
 
   <main>
   
-        <h1 class="hover-translate-base">
+        <h1 class="main-header" >
   Le Fishe Compagnons 
-  <span class="tooltip-base">Le Fishe: Companions </span>
+  <span class="tooltip">Le Fishe: Companions </span>
 </h1>
 
 
