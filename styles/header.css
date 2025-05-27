@@ -76,8 +76,12 @@ h2 {
   transition: background-color 0.8s ease, color 0.8s ease, transform 0.8s ease;
 }
 
+
 .button-top:hover {
+  border: 2px dashed white;
   background-color: #607aad;
+  
+
   color: white;
   transform: translateY(-1px); 
 }
@@ -121,7 +125,7 @@ a:hover {
   color: white;
   padding: 5px 10px;
   border-radius: 6px;
-  font-size: 25px;
+  font-size: 19px;
   opacity: 0;
   transition: opacity 0.9s ease;
   white-space: nowrap;
