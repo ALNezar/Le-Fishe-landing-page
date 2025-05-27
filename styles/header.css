@@ -1,46 +1,41 @@
 
 
 header {
- display: flex; 
-  flex-flow: column wrap;
-  justify-content: space-between; 
+  display: flex; 
+  flex-flow: column nowrap;
   align-items: center; 
-  padding: 20px;
   background-color: #1F2937;
   
 }
-
-nav {
-  display: flex;
-    gap: 900px;                      
-
-  justify-content: space-between; 
-  align-items: center;           
-  padding: 0 40px;               
-  background-color: #1F2937;
-
+nav{ display: flex;
+  justify-content: space-between; /* ← pushes logo left, nav right */
+  align-items: center;
+  padding: 10px 30px;
+}
+.logo{
+   display: flex; 
+  flex-flow: column wrap;
+  padding: 20px;
 }
 
 .nav-links {
-  
-  display: flex;
-  justify-content: space-around; 
+    display: flex; 
+    align-items: flex-start;
+
   gap: 30px;                      
   list-style: none;
-   margin: 25.8px;
-  padding: 0px;
   list-style-type: none;
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 29px;
  
 }
 
 h1 {
 
- margin: -36.4px;
-padding: 39.2px;
-
+  margin: -36.4px;
+  padding: 39.2px;
   font-family: "Dancing Script", cursive;
   font-weight: 400;
   font-size: 68px;
@@ -51,8 +46,7 @@ padding: 39.2px;
 h2 {
   margin: 25.8px;
   padding: 0px;
-
-    font-size: 18px;
+  font-size: 18px;
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;

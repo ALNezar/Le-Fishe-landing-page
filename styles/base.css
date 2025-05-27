@@ -1,51 +1,94 @@
+*{
+    margin: 2px;
+
+}
+
 main{
+    
      display: flex; 
   flex-flow: column wrap;
   justify-content: space-between; 
   align-items: center; 
   padding: 20px;
   background-color: #eaeaea;
-  
+
 }
+.main-header{
+    color: rgb(255, 255, 255);
+    background-color: #1F2937;
+    margin: 20px;
+    padding: 20px;
+    border: 2px dashed #ffffff;
+
+}
+
+
 
 
 
 
 section{
-      display: flex; 
+  display: flex; 
   flex-flow: row wrap;
-    font-size: 24px;
+ padding: 68px;
+  font-size: 44px;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: "Dancing Script", cursive;
+
+}
+
+
+.Le-Fishe-Au-Chocolat img,
+.la-rotation-du-le-fishe img,
+.le-Fishe-du-métro img,
+.le-fishe-philosophe img {
+              
+    border: 7px dashed #1F2937;         
+    margin: 20px;                       
+    padding: 20px;                      
+    box-sizing: border-box;            
+}
+
+
+.Le-Fishe-Au-Chocolat p,
+.la-rotation-du-le-fishe p ,
+.le-Fishe-du-métro p ,
+.le-fishe-philosophe p {
+ background-color: #1F2937;
+ color: antiquewhite;
+ display: flex;
+ margin: 20px;
+ padding: 20spx;
+ justify-content: center;
+   border: 2px dashed #ffffff;
+
+
 }
 
 
 
-/* Tooltip System */
-.hover-translate-base {
-  position: relative;
-  display: inline-block;
-  cursor: help;
-  color: black;
-    font-family: "Lobster", sans-serif;
-}
 
-.tooltip-base {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: black;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 6px;
-  font-size: 19px;
-  opacity: 0;
-  transition: opacity 0.9s ease;
-  white-space: nowrap;
-  pointer-events: none;
+blockquote {
+  font-size: 100px;
+ 
+  background-size: cover;
+  margin: auto;     
+  padding: 180px; 
+  
 }
+.quotes{
+          font-family: "Lobster", sans-serif;
+color: #eaeaea;
+    display: flex;
+    align-content: center;
+    align-self: center;
+     background-color: #1F2937;  
+ border: 12px;
+ margin: 12px;
 
-.hover-translate:hover.tooltip-base{
-  opacity: 1;
+.qfish{
+      font-family: "Lobster", sans-serif;
+    font-style:italic;
+    font-size: 43px;
 }
