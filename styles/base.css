@@ -27,16 +27,19 @@ main{
 
 
 
-section{
-  display: flex; 
-  flex-flow: row wrap;
- padding: 68px;
-  font-size: 44px;
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  font-family: "Dancing Script", cursive;
-
+  font-family: var(--font-body);
+  width: 100%;
+  max-width: 1200px;
+  padding: var(--padding);
 }
+
 
 
 .Le-Fishe-Au-Chocolat img,
