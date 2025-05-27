@@ -125,7 +125,10 @@ color: #eaeaea;
   margin-top: 74.2px;
 }
 
-
+.call-to-action-button:hover {
+    border: 2px dashed white;
+  background-color: #607aad;
+}
 .button-top:hover {
   border: 2px dashed white;
   background-color: #607aad;
