@@ -92,3 +92,11 @@ color: #eaeaea;
     font-style:italic;
     font-size: 43px;
 }
+
+
+.call-to-action {
+      display: flex;
+ margin: 1px;     
+  padding: 180px; 
+  background-color: #3882f6;
+}
