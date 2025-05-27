@@ -1,0 +1,10 @@
+footer{
+              font-family: "Lobster", sans-serif;
+color: #eaeaea;
+    display: flex;
+    align-content: center;
+    align-self: center;
+     background-color: #1F2937;  
+ border: 12px;
+ margin: 12px;
+}

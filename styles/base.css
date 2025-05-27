@@ -86,7 +86,7 @@ color: #eaeaea;
      background-color: #1F2937;  
  border: 12px;
  margin: 12px;
-
+}
 .qfish{
       font-family: "Lobster", sans-serif;
     font-style:italic;
@@ -95,8 +95,42 @@ color: #eaeaea;
 
 
 .call-to-action {
-      display: flex;
- margin: 1px;     
-  padding: 180px; 
+    font-size: 50px;
+  color: rgb(255, 255, 255);
   background-color: #3882f6;
+  border-radius: 8px;
+  height: 183.4px;
+  width: 1246.8px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  font-family: "Lobster", sans-serif;
+  margin: 129px;
+  padding: 9.2px;
+}
+.call-to-action p {
+ margin: 14px;
+}
+
+.call-to-action-button {
+    font-family: "Lobster", sans-serif;
+  font-size: 22px;
+  background-color: #3882f6;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  border: solid white;
+  height: 39.4px;
+  width: 175.4px;
+  margin-left: 492.0px;
+  margin-top: 74.2px;
+}
+
+
+.button-top:hover {
+  border: 2px dashed white;
+  background-color: #607aad;
+  
+
+  color: white;
+  transform: translateY(-1px); 
 }
