@@ -93,14 +93,14 @@ blockquote {
   
 }
 .quotes{
-          font-family: "Lobster", sans-serif;
-color: #eaeaea;
+    font-family: "Lobster", sans-serif;
+    color: #eaeaea;
     display: flex;
     align-content: center;
     align-self: center;
      background-color: #1F2937;  
- border: 12px;
- margin: 12px;
+     border: 12px;
+     margin: 12px;
 }
 .qfish{
       font-family: "Lobster", sans-serif;
@@ -108,47 +108,58 @@ color: #eaeaea;
     font-size: 43px;
 }
 
-
 .call-to-action {
-    font-size: 50px;
-  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  color: white;
   background-color: #3882f6;
   border-radius: 8px;
-  height: 183.4px;
-  width: 1246.8px;
   display: flex;
-  flex-flow: column wrap;
-  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Lobster", sans-serif;
-  margin: 129px;
-  padding: 9.2px;
+  margin: 80px auto;
+  padding: 40px 60px;
+  text-align: left;
+  max-width: 90%;
+  box-sizing: border-box;
+  flex-wrap: wrap;   
 }
-.call-to-action p {
- margin: 14px;
+
+
+.call-to-action-text p {
+  margin: 0;
+  font-size: 28px;
 }
 
 .call-to-action-button {
-    font-family: "Lobster", sans-serif;
-  font-size: 22px;
+  font-family: "Lobster", sans-serif;
+  font-size: 1.2rem;
   background-color: #3882f6;
   border-radius: 8px;
-  color: rgb(255, 255, 255);
-  border: solid white;
-  height: 39.4px;
-  width: 175.4px;
-  margin-left: 492.0px;
-  margin-top: 74.2px;
+  color: white;
+  border: 2px solid white;
+  height: 45px;
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+  .call-to-action {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .call-to-action-button {
+    align-self: flex-end;
+  }
 }
 
 .call-to-action-button:hover {
-    border: 2px dashed white;
-  background-color:     #1F2937;  
-}
-.button-top:hover {
   border: 2px dashed white;
-  background-color: #607aad;
-  
-
-  color: white;
-  transform: translateY(-1px); 
+  background-color: #1F2937;
 }
+
