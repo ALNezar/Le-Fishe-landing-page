@@ -24,6 +24,9 @@ nav{ display: flex;
   justify-content: space-between; /* ← pushes logo left, nav right */
   align-items: center;
   padding: 10px 30px;
+
+
+  
 }
 .logo{
    display: flex; 
@@ -44,6 +47,7 @@ nav{ display: flex;
   font-size: 29px;
  
 }
+
 
 h1 {
 
@@ -125,13 +129,11 @@ a:hover {
 
 .tooltip {
   position: absolute;
-  bottom: 100%;
+  bottom: 70%;
   left: 50%;
   transform: translateX(-50%);
   background: black;
   color: white;
-  padding: 5px 10px;
-  border-radius: 6px;
   font-size: 19px;
   opacity: 0;
   transition: opacity 0.9s ease;
