@@ -1,9 +1,10 @@
 footer {
+  display: flex;
+  justify-content: center;      
+  align-items: center;         
+  padding: 17px 0;             
   font-family: "Lobster", sans-serif;
   color: #eaeaea;
-  background-color: #1F2937;
-  padding: 17.0px;
+  background: #1F2937;
   text-align: center;
- 
-  margin: -17px;
 }
