@@ -25,7 +25,7 @@ Le Fishe est l'animal le plus sophistiqué, le plus doux et le plus raffiné.
 ](https://youtu.be/nM8moDafJOU?si=IERKOApSqBVFTawn)
 > 
   > ℹ️ *All rights to the music "La Vie en Rose" belong to the respective copyright holders.*
-
+---
 
 # License / Usage
 
