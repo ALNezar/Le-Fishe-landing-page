@@ -1,3 +1,5 @@
+<img width="700" height="750" alt="image" src="https://github.com/user-attachments/assets/254166d8-36cc-4d7e-a3ca-76550607dc30" />
+
 # Le-Fishe-landing-page : odin project
 Le Fishe est l'animal le plus sophistiqué, le plus doux et le plus raffiné
 
