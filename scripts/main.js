@@ -16,7 +16,7 @@ function prepareAudioPlayback(audioElement) {
   console.log("🎵 Romantic music playing ;O!. Enjoy");
 
   audioElement.play().catch(() => {
-    console.log("NO MUSIC FOR YOU :C");
+    console.log("NO MUSIC FOR YOU :c");
   });
 }
 
