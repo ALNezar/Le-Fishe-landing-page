@@ -1,16 +1,28 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const audio = document.getElementById("fishe-audio");
+document.addEventListener("DOMContentLoaded", handlePageLoad);
 
-  if (audio) {
-    audio.volume = 0.1; // Set initial volume to 10%
-    console.log("🎵 Romantic music playing ;O!. Enjoy"); 
-    audio.play().catch(() => console.log("Can't auto-play audio, user needs to click 😅"));
-  } else {
-    console.warn("😔 No Fishe Audio element found (NO MUSIC :C)");
+function handlePageLoad() {
+  const audioElement = document.getElementById("fishe-audio");
+  if (!audioElement) {
+    console.warn("😔 No audio element found");
+    return;
   }
 
- setInterval(() => {
-    const volumePercent = audio.volume * 100;
-    console.log(`🔊 Current audio volume: ${volumePercent.toFixed(0)}%`);
+  prepareAudioPlayback(audioElement);
+  startVolumeMonitor(audioElement);
+}
+
+function prepareAudioPlayback(audioElement) {
+  audioElement.volume = 0.1;
+  console.log("🎵 Romantic music playing ;O!. Enjoy");
+
+  audioElement.play().catch(() => {
+    console.log("NO MUSIC FOR YOU :C");
+  });
+}
+
+function startVolumeMonitor(audioElement) {
+  setInterval(() => {
+    const volumePercent = audioElement.volume * 100;
+    console.log(`🔊 Volume: ${volumePercent.toFixed(0)}%`);
   }, 1000);
-});
+}
