@@ -1,196 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Basic Settings -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- meta tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Le Fishe</title>
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Le Fishe: the meme of a carp swimming in a bathtub with the song ‘La Vie En Rose’ playin the background."
+    />
+    <meta
+      name="keywords"
+      content="Le Fishe, le bathtub fishe, meme, carp, 4chan, La Vie En Rose"
+    />
+    <meta name="author" content="Al Nezar" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="generator" content="Hand-coded HTML" />
 
-  <!-- SEO Meta Tags -->
-  <meta name="description"
-    content="Le Fishe: the meme of a carp swimming in a bathtub,  with the song playing in the background ‘La Vie En Rose’." />
-  <meta name="keywords" content="Le Fishe, le bathtub fishe, meme, carp, 4chan, La Vie En Rose" />
-  <meta name="author" content="Al Nezar" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#1E90FF" />
-  <meta name="format-detection" content="telephone=no,email=no,address=no" />
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Le Fishe Meme" />
+    <meta
+      property="og:description"
+      content="A carp in a bathtub meme that spread from 4chan, often set to ‘La Vie En Rose’."
+    />
+    <meta property="og:image" content="images/le fishe logo.png" />
+    <meta
+      property="og:url"
+      content="https://alnezar.github.io/Le-Fishe-landing-page/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Le Fishe" />
+    <meta property="og:locale" content="en_US" />
 
-  <!-- Open Graph (Social Sharing) -->
-  <meta property="og:title" content="Le Fishe Meme" />
-  <meta property="og:description"
-    content="A carp in a bathtub meme that spread from 4chan, often set to ‘La Vie En Rose’." />
-  <meta property="og:image" content="images/le fishe logo.png" />
-  <meta property="og:url" content="https://alnezar.github.io/Le-Fishe-landing-page/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Le Fishe Meme" />
-  <meta property="og:locale" content="en_US" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Le Fishe Meme" />
+    <meta
+      name="twitter:description"
+      content="A carp in a bathtub meme from 4chan, paired with ‘La Vie En Rose’."
+    />
+    <meta name="twitter:image" content="images/le fishe logo.png" />
+    <meta name="twitter:site" content="@SDCdotCLAN" />
+    <meta name="twitter:creator" content="@ALNezar" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Le Fishe Meme" />
-  <meta name="twitter:description" content="A carp in a bathtub meme from 4chan, paired with ‘La Vie En Rose’." />
-  <meta name="twitter:image" content="images/le fishe logo.png" />
-  <meta name="twitter:creator" content="@ALNezar" />
+    <!-- Mobile & PWA -->
+    <meta name="theme-color" content="#ffcc00" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="format-detection" content="telephone=no,email=no,address=no" />
 
-  <!-- Favicon & App Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-  <link rel="manifest" href="icons/site.webmanifest">
-  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#1E90FF">
-  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <!-- Security / Misc (CSP fixed for fonts) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data: https:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
+    />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&display=swap"
-    rel="stylesheet">
+    <!-- Favicons / Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#ffcc00" />
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="styles/header.css" />
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/footer.css" />
+    <!-- Title -->
+    <title>Le Fishe</title>
 
-  <!-- Scripts -->
-  <script src="scripts/main.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
 
-</head>
+    <!-- JS -->
+    <script src="scripts/main.js" defer></script>
+  </head>
 
+  <body>
+    <audio id="fishe-audio" loop autoplay preload="metadata">
+      <source src="audio/le fishe (full version).mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="images/le fishe logo.png"
+            alt="Le Fishe logo"
+            width="150"
+            height="150"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="La'Océan">La'Océan</a></li>
+          <li><a href="La'Sea">La'Sea</a></li>
+          <li>
+            <a href="https://github.com/ALNezar/Le-Fishe-landing-page"
+              >Le'propos?</a
+            >
+          </li>
+        </ul>
+      </nav>
 
+      <h1 class="hover-translate">
+        Le Fishe: éternellement magnifique
+        <span class="tooltip">Le Fishe: Eternally Magnificent</span>
+      </h1>
 
-<body>
-  <audio id="fishe-audio" loop autoplay preload="metadata">
-    <source src="audio/le fishe (full version).mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+      <h2 class="hover-translate-h2">
+        Le Fishe est l'animal le plus sophistiqué, le plus doux et le plus
+        raffiné
+        <span class="tooltip"
+          >Le Fishe is the most sophisticated, gentle and refined animal</span
+        >
+      </h2>
 
-
-
-  <header>
-
-
-    <nav>
-      <div class="logo">
-        <img src="images/le fishe logo.png" alt="Le Fishe logo" width="150" height="150">
+      <div class="lefishe-gif">
+        <img
+          src="images/Le_Fishe_Playlist_Animated__Jazz_Fishy_Synths_Old_European_-ezgif.com-crop.webp"
+          alt="Le Fishe Swimming in its natural environment"
+          width="400"
+          height="300"
+        />
       </div>
-      <ul class="nav-links">
-        <li><a href="La'Océan">La'Océan</a></li>
-        <li><a href="La'Sea">La'Sea</a></li>
-        <li><a href="https://github.com/ALNezar/Le-Fishe-landing-page">Le'propos?</a></li>
-      </ul>
-    </nav>
 
-    <h1 class="hover-translate">
-      Le Fishe: éternellement magnifique
-      <span class="tooltip">Le Fishe: Eternally Magnificent</span>
-    </h1>
+      <div class="hover-translate">
+        <button class="button-top">À l’eau</button>
+        <span class="tooltip">To the water!</span>
+      </div>
+    </header>
 
+    <main>
+      <h1 class="main-header">
+        Le Fishe Compagnons
+        <span class="tooltip">Le Fishe: Companions </span>
+      </h1>
 
-    <h2 class="hover-translate-h2">
-      Le Fishe est l'animal le plus sophistiqué, le plus doux et le plus raffiné
-      <span class="tooltip">Le Fishe is the most sophisticated, gentle and refined animal</span>
-    </h2>
+      <section>
+        <div class="Le-Fishe-Au-Chocolat">
+          <p>Le Fishe Au Chocolat</p>
+          <div>
+            <img
+              src="images/le fishe au chocolat.webp"
+              alt="Le Fishe Swimming in its natural environment AU CHOCOLAT! "
+              width="400"
+              height="300"
+            />
+          </div>
+        </div>
 
-    <div class="lefishe-gif"> <img
-        src="images/Le_Fishe_Playlist_Animated__Jazz_Fishy_Synths_Old_European_-ezgif.com-crop.webp"
-        alt="Le Fishe Swimming in its natural environment" width="400" height="300"></div>
+        <div class="la-rotation-du-le-fishe">
+          <p>la rotation du le fishe</p>
+          <div>
+            <img
+              src="images/la rotation du le fishe.webp"
+              alt="la rotation du le fishe"
+              width="400"
+              height="300"
+            />
+          </div>
+        </div>
 
+        <div class="le-Fishe-du-métro">
+          <p>le Fishe du métro</p>
+          <div>
+            <img
+              src="images/le Fishe du métro.webp"
+              alt="le Fishe du métro"
+              width="400"
+              height="300"
+            />
+          </div>
+        </div>
 
-    <div class="hover-translate">
-      <button class="button-top">À l’eau</button>
-      <span class="tooltip">To the water!</span>
+        <div class="le-fishe-philosophe">
+          <p>le fishe philosophe</p>
+          <div>
+            <img
+              src="images/le fishe philosophe.webp"
+              alt="le fishe philosophe"
+              width="400"
+              height="300"
+            />
+          </div>
+        </div>
+
+        <div class="le-fishe-philosophe">
+          <p>pog le fishe</p>
+          <div>
+            <img
+              src="images/pog lefish.webp"
+              alt="pog le fishe"
+              width="400"
+              height="300"
+            />
+          </div>
+        </div>
+
+        <div class="le-fishe-philosophe">
+          <p>Brit*sh le fishe</p>
+          <div>
+            <img
+              src="images/britsh le fishe.webp"
+              alt="Brit*sh le fishe"
+              width="400"
+              height="300"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="quotes">
+      <blockquote>
+        <q> glub glub glub </q>
+        <footer class="qfish">- Le Fishe</footer>
+      </blockquote>
     </div>
 
-  </header>
-
-  <main>
-
-    <h1 class="main-header">
-      Le Fishe Compagnons
-      <span class="tooltip">Le Fishe: Companions </span>
-    </h1>
-
-
-    <section>
-
-      <div class="Le-Fishe-Au-Chocolat">
-        <p>Le Fishe Au Chocolat</p>
-        <div>
-          <img src="images/le fishe au chocolat.webp" alt="Le Fishe Swimming in its natural environment AU CHOCOLAT! "
-            width="400" height="300">
-        </div>
+    <div class="call-to-action">
+      <div class="call-to-action-text">
+        <p>BE COME FISH</p>
+        <p>"évoluer"</p>
       </div>
-
-      <div class="la-rotation-du-le-fishe">
-        <p>la rotation du le fishe</p>
-        <div>
-          <img src="images/la rotation du le fishe.webp" alt="la rotation du le fishe" width="400" height="300">
-        </div>
-      </div>
-
-      <div class="le-Fishe-du-métro">
-        <p>le Fishe du métro</p>
-        <div>
-          <img src="images/le Fishe du métro.webp" alt="le Fishe du métro" width="400" height="300">
-        </div>
-      </div>
-
-      <div class="le-fishe-philosophe">
-        <p>le fishe philosophe</p>
-        <div>
-          <img src="images/le fishe philosophe.webp" alt="le fishe philosophe" width="400" height="300">
-        </div>
-      </div>
-
-      <div class="le-fishe-philosophe">
-        <p>pog le fishe</p>
-        <div>
-          <img src="images/pog lefish.webp" alt="pog le fishe" width="400" height="300">
-        </div>
-      </div>
-
-      <div class="le-fishe-philosophe">
-        <p>Brit*sh le fishe</p>
-        <div>
-          <img src="images/britsh le fishe.webp" alt="Brit*sh le fishe" width="400" height="300">
-        </div>
-      </div>
-
-    </section>
-
-
-
-
-  </main>
-  <div class="quotes">
-    <blockquote>
-      <q>
-        glub glub glub
-      </q>
-      <footer class="qfish">- Le Fishe</footer>
-    </blockquote>
-  </div>
-
-  <div class="call-to-action">
-    <div class="call-to-action-text">
-      <p>BE COME FISH</p>
-      <p>"évoluer"</p>
+      <button class="call-to-action-button">métamorphoser</button>
     </div>
-    <button class="call-to-action-button">métamorphoser</button>
-  </div>
 
-
-
-
-  <footer>
-    <p> &copy; 2025 Al Nezar. Created as part of The Odin Project curriculum</p>
-  </footer>
-
-
-</body>
-
+    <footer>
+      <p>
+        &copy; 2025 Al Nezar. Created as part of The Odin Project curriculum
+      </p>
+    </footer>
+  </body>
 </html>
